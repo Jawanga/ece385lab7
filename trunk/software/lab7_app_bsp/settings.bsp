@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 11, 2015 12:04:28 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1426050268146</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 11, 2015 8:26:19 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1426123579979</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>U:\ECE385\Lab7svn\software\lab7_app_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab7_soc.sopcinfo</SopcDesignFile>
@@ -845,20 +845,38 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <slaveDescriptor>key_3</slaveDescriptor>
                 <addressRange>0x00000020 - 0x0000002F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>led</slaveDescriptor>
+                <slaveDescriptor>key_2</slaveDescriptor>
                 <addressRange>0x00000030 - 0x0000003F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>SW</slaveDescriptor>
+                <addressRange>0x00000040 - 0x0000004F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <addressRange>0x00000050 - 0x0000005F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>led</slaveDescriptor>
+                <addressRange>0x00000060 - 0x0000006F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x00000048 - 0x0000004F</addressRange>
+                <addressRange>0x00000078 - 0x0000007F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>

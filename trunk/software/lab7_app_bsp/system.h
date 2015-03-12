@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'lab7_soc'
  * SOPC Builder design path: ../../lab7_soc.sopcinfo
  *
- * Generated: Tue Mar 10 23:57:36 CDT 2015
+ * Generated: Wed Mar 11 20:26:20 CDT 2015
  */
 
 /*
@@ -132,6 +132,33 @@
 
 
 /*
+ * SW configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SW altera_avalon_pio
+#define SW_BASE 0x40
+#define SW_BIT_CLEARING_EDGE_REGISTER 0
+#define SW_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SW_CAPTURE 0
+#define SW_DATA_WIDTH 8
+#define SW_DO_TEST_BENCH_WIRING 0
+#define SW_DRIVEN_SIM_VALUE 0
+#define SW_EDGE_TYPE "NONE"
+#define SW_FREQ 50000000
+#define SW_HAS_IN 1
+#define SW_HAS_OUT 0
+#define SW_HAS_TRI 0
+#define SW_IRQ -1
+#define SW_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SW_IRQ_TYPE "NONE"
+#define SW_NAME "/dev/SW"
+#define SW_RESET_VALUE 0
+#define SW_SPAN 16
+#define SW_TYPE "altera_avalon_pio"
+
+
+/*
  * System configuration
  *
  */
@@ -171,12 +198,66 @@
 
 
 /*
+ * key_2 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_key_2 altera_avalon_pio
+#define KEY_2_BASE 0x30
+#define KEY_2_BIT_CLEARING_EDGE_REGISTER 0
+#define KEY_2_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define KEY_2_CAPTURE 0
+#define KEY_2_DATA_WIDTH 1
+#define KEY_2_DO_TEST_BENCH_WIRING 0
+#define KEY_2_DRIVEN_SIM_VALUE 0
+#define KEY_2_EDGE_TYPE "NONE"
+#define KEY_2_FREQ 50000000
+#define KEY_2_HAS_IN 1
+#define KEY_2_HAS_OUT 0
+#define KEY_2_HAS_TRI 0
+#define KEY_2_IRQ -1
+#define KEY_2_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define KEY_2_IRQ_TYPE "NONE"
+#define KEY_2_NAME "/dev/key_2"
+#define KEY_2_RESET_VALUE 0
+#define KEY_2_SPAN 16
+#define KEY_2_TYPE "altera_avalon_pio"
+
+
+/*
+ * key_3 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_key_3 altera_avalon_pio
+#define KEY_3_BASE 0x20
+#define KEY_3_BIT_CLEARING_EDGE_REGISTER 0
+#define KEY_3_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define KEY_3_CAPTURE 0
+#define KEY_3_DATA_WIDTH 1
+#define KEY_3_DO_TEST_BENCH_WIRING 0
+#define KEY_3_DRIVEN_SIM_VALUE 0
+#define KEY_3_EDGE_TYPE "NONE"
+#define KEY_3_FREQ 50000000
+#define KEY_3_HAS_IN 1
+#define KEY_3_HAS_OUT 0
+#define KEY_3_HAS_TRI 0
+#define KEY_3_IRQ -1
+#define KEY_3_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define KEY_3_IRQ_TYPE "NONE"
+#define KEY_3_NAME "/dev/key_3"
+#define KEY_3_RESET_VALUE 0
+#define KEY_3_SPAN 16
+#define KEY_3_TYPE "altera_avalon_pio"
+
+
+/*
  * led configuration
  *
  */
 
 #define ALT_MODULE_CLASS_led altera_avalon_pio
-#define LED_BASE 0x30
+#define LED_BASE 0x60
 #define LED_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_CAPTURE 0
@@ -271,7 +352,7 @@
  */
 
 #define ALT_MODULE_CLASS_sdram_pll altpll
-#define SDRAM_PLL_BASE 0x20
+#define SDRAM_PLL_BASE 0x50
 #define SDRAM_PLL_IRQ -1
 #define SDRAM_PLL_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SDRAM_PLL_NAME "/dev/sdram_pll"
@@ -285,13 +366,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x48
+#define SYSID_QSYS_0_BASE 0x78
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1426048790
+#define SYSID_QSYS_0_TIMESTAMP 1426123444
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

@@ -9,7 +9,8 @@
 // Top-level module that integrates the Nios II system with the rest of the hardware
 
 module lab7(  	  input	       CLOCK_50, 
-					  input  [1:0]  KEY,
+					  input  [3:0]  KEY,
+					  input	[7:0]	 SW,
 					  output [7:0]  LEDG,
 					  output [12:0] DRAM_ADDR,
 					  output [1:0]  DRAM_BA,
@@ -36,7 +37,10 @@ module lab7(  	  input	       CLOCK_50,
 											 .sdram_wire_dqm(DRAM_DQM),     	//  .dqm
 											 .sdram_wire_ras_n(DRAM_RAS_N),    //  .ras_n
 											 .sdram_wire_we_n(DRAM_WE_N),      //  .we_n
-											 .sdram_clk_clk(DRAM_CLK)			//  clock out to SDRAM from other PLL port
+											 .sdram_clk_clk(DRAM_CLK),			//  clock out to SDRAM from other PLL port
+											 .sw_wire_export(SW),
+											 .key_2_wire_export(~KEY[2]),
+											 .key_3_wire_export(~KEY[3])
 											 );
 											 
 				//Instantiate additional FPGA fabric modules as needed		  
